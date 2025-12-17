@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS-->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Google Fonts Links For Icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <title>PRIMECARE HEALTH</title>
+    <style>
+        footer {
+        background: #000;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link"><img src="prime_care_logo.png" alt="Prime Care Logo" class="logo-image"></a>
+            <a href="index.html" class="logo">PRIMECARE<span>.</span></a>
+        </div>
+        <ul class="menu-link">
+            <span id="close-menu-btn" class="material-symbols-outlined">Close</span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="signup.php">Register</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <span id="menu-btn" class="material-symbols-outlined">Menu</span>
+    </nav>
+</header>
+
+<section class="hero-section">
+    <div class="content">
+        <h1>Start Your Day With A Smile.</h1>
+        <p>
+            Keep Yourself & Your Family Safe. Access Healthcare Services Anytime from Anywhere with Prime Care!<br>
+            Don't worry. Find your doctor online and Book as you wish with Prime Care.
+        </p>
+        <button onclick="location.href='login.php'">
+            BOOK NOW
+        </button>
+    </div>
+</section>
+
+<footer>
+    <p>All rights Reserved &copy; Primecare Health Services <span id="currentYear"></span></p>
+</footer>
+
+<script>
+    const header = document.querySelector("header");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile Menu on Menu Button Click
+    menuBtn.addEventListener("click", () => {
+        header.classList.toggle("show-mobile-menu");
+    });
+
+    // Close mobile Menu on Menu Button Click
+    closeMenuBtn.addEventListener("click", () => {
+        header.classList.remove("show-mobile-menu");
+    });
+
+    // Set current year in footer
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

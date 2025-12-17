@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS-->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Boxicons CSS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Contact Us - PRIMECARE HEALTH</title>
+    <style>
+.contactus-section {
+    padding: 100px 20px; /* Adjust padding to prevent overlap */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content */
+    position: relative;
+    min-height: calc(100vh - 80px); /* Account for header height */
+}
+
+.contactus-section .content {
+    background: rgba(0, 0, 0, 0.7); /* Adding semi-transparent background for better text visibility */
+    padding: 50px;
+    border-radius: 15px;
+    color: #fff;
+    max-width: 800px;
+    margin: 50px 0; /* Adjust margin to prevent overflow */
+}
+
+.contactus-section .content h1 {
+    font-size: 3em; /* Big font size */
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff; /* Text color */
+    font-family: 'Arial', sans-serif; /* Stylish font */
+    letter-spacing: 2px; /* Spacing between letters */
+    text-transform: uppercase; /* Uppercase letters */
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-method .icon {
+    font-size: 2em; /* Icon size */
+    margin-right: 15px; /* Space between icon and text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Icon color */
+}
+
+.contact-method .details h2 {
+    margin: 0;
+    font-size: 1.5em; /* Title font size */
+    color: #fff; /* Title color */
+}
+
+.contact-method .details p {
+    margin: 5px 0 0;
+    color: #ccc; /* Text color */
+}
+
+.map-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link"><img src="prime_care_logo.png" alt="Prime Care Logo" class="logo-image"></a>
+            <a href="index.html" class="logo">PRIMECARE<span>.</span></a>
+        </div>
+        <ul class="menu-link">
+            <span id="close-menu-btn" class="material-symbols-outlined">Close</span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="signup.php">Register</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <span id="menu-btn" class="material-symbols-outlined">Menu</span>
+    </nav>
+</header>
+
+<div class="blur-background"></div>
+
+<section class="contactus-section">
+    <div class="content">
+        <h1>Contact Us</h1>
+        <div class="contact-method">
+            <div class="icon">
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="details">
+                <h2>Email Us</h2>
+                <p>info@primecarehealth.com</p>
+                <p>Email is for General Enquiries and Issues with Booking Appointments</p>
+            </div>
+        </div>
+        <div class="contact-method">
+            <div class="icon">
+                <i class='bx bx-phone'></i>
+            </div>
+            <div class="details">
+                <h2>Call Us</h2>
+                <p>(+254) 716-442120</p>
+                <p>Call us to speak to a member of our contact center</p>
+            </div>
+        </div>
+        <div class="contact-method">
+            <div class="icon">
+                <i class='bx bx-map'></i>
+            </div>
+            <div class="details">
+                <h2>Visit Us</h2>
+                <p>125 Monrovia Street, GRD Floor, Wellington Complex Building</p>
+                <p>Visit our Offices for a one-on-one chat.</p>
+                <p>We are open from 9am to 5pm every day</p>
+            </div>
+        </div>
+        <div class="map-container">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.820617051285!2d36.81537097363151!3d-1.2813589987064582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d3a6af087f%3A0x2d43b1fe1ca2ee7e!2sMonrovia%20St%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1718272802554!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>All rights Reserved &copy; Primecare Health Services <span id="currentYear"></span></p>
+</footer>
+
+<script>
+    const header = document.querySelector("header");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile Menu on Menu Button Click
+    menuBtn.addEventListener("click", () => {
+        header.classList.toggle("show-mobile-menu");
+    });
+
+    // Close mobile Menu on Menu Button Click
+    closeMenuBtn.addEventListener("click", () => {
+        header.classList.remove("show-mobile-menu");
+    });
+
+    // Set current year in footer
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+

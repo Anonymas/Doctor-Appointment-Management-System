@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS-->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Google Fonts Links For Icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <title>About Us - PRIMECARE HEALTH</title>
+</head>
+<body>
+    <style>
+        .aboutus-section {
+    padding: 100px 20px; /* Adjust padding to prevent overlap */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content */
+    position: relative;
+    min-height: calc(100vh - 80px); /* Account for header height */
+}
+
+.aboutus-section .content {
+    background: rgba(0, 0, 0, 0.7); /* Adding semi-transparent background for better text visibility */
+    padding: 50px;
+    border-radius: 15px;
+    color: #fff;
+    max-width: 800px;
+    margin: 50px 0; /* Adjust margin to prevent overflow */
+}
+footer {
+        background: #000;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    </style>
+    
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link"><img src="prime_care_logo.png" alt="Prime Care Logo" class="logo-image"></a>
+            <a href="index.html" class="logo">PRIMECARE<span>.</span></a>
+        </div>
+        <ul class="menu-link">
+            <span id="close-menu-btn" class="material-symbols-outlined">Close</span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="signup.php">Register</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <span id="menu-btn" class="material-symbols-outlined">Menu</span>
+    </nav>
+</header>
+
+<div class="blur-background"></div>
+
+<section class="aboutus-section">
+    <div class="content">
+        <h1>About PrimeCare Health</h1>
+        <p>
+            At PrimeCare Health, we believe in providing exceptional healthcare services with a personal touch. Established with the mission to make healthcare accessible and affordable for everyone, we are dedicated to improving the health and well-being of the communities we serve.
+        </p>
+        <h2>Our Mission</h2>
+        <p>
+            Our mission is to offer comprehensive healthcare services that combine advanced medical technology with compassionate care. We strive to empower individuals to take control of their health by providing them with the resources and support they need.
+        </p>
+        <h2>Our Vision</h2>
+        <p>
+            We envision a future where everyone has access to high-quality healthcare services, regardless of their location or financial situation. We aim to be a leading healthcare provider known for our innovative approach and commitment to excellence.
+        </p>
+        <h2>Our Values</h2>
+        <ul>
+            <li><strong>Compassion:</strong> We provide care with empathy and respect for the dignity of each individual.</li>
+            <li><strong>Excellence:</strong> We are committed to delivering the highest standards of medical care and customer service.</li>
+            <li><strong>Innovation:</strong> We embrace new technologies and practices to continuously improve our services.</li>
+            <li><strong>Integrity:</strong> We conduct our business with honesty and transparency.</li>
+            <li><strong>Community:</strong> We work to improve the health of our community through outreach and education programs.</li>
+        </ul>
+        <h2>Our Services</h2>
+        <p>
+            PrimeCare Health offers a wide range of healthcare services, including:
+        </p>
+        <ul>
+            <li>Primary Care</li>
+            <li>Specialty Care</li>
+            <li>Telemedicine</li>
+            <li>Preventive Health Services</li>
+            <li>Wellness Programs</li>
+        </ul>
+        <p>
+            Our team of dedicated healthcare professionals is here to provide you with the care and support you need to live a healthy and fulfilling life. Whether you need a routine check-up or specialized medical treatment, you can trust PrimeCare Health to be there for you.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>All rights Reserved &copy; Primecare Health Services <span id="currentYear"></span></p>
+</footer>
+
+<script>
+    const header = document.querySelector("header");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile Menu on Menu Button Click
+    menuBtn.addEventListener("click", () => {
+        header.classList.toggle("show-mobile-menu");
+    });
+
+    // Close mobile Menu on Menu Button Click
+    closeMenuBtn.addEventListener("click", () => {
+        header.classList.remove("show-mobile-menu");
+    });
+
+    // Set current year in footer
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
