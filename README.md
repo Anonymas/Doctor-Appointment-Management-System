@@ -26,3 +26,6 @@ A web-based system that allows patients to book appointments with doctors while 
 
 ## Purpose
 This project was built to demonstrate full-stack web development skills including backend logic, database design, and frontend implementation.
+
+## Screenshots
+Screenshots of the system interface can be found in the Screenshots/ folder.
