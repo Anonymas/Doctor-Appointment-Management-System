@@ -9,6 +9,8 @@ A web-based system that allows patients to book appointments with doctors while 
 - Admin dashboard
 - Secure authentication
 - Responsive UI
+- Appointment SMS reminder
+- Generates Reports
 
 ## Technologies Used
 - PHP
@@ -16,7 +18,6 @@ A web-based system that allows patients to book appointments with doctors while 
 - HTML
 - CSS
 - JavaScript
-- Bootstrap
 
 ## Installation
 1. Clone the repository
