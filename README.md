@@ -24,4 +24,5 @@ A web-based system that allows patients to book appointments with doctors while 
 3. Configure database connection in the config file
 4. Run the project using XAMPP or WAMP
 
-
+## Purpose
+This project was built to demonstrate full-stack web development skills including backend logic, database design, and frontend implementation.
